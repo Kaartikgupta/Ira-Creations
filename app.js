@@ -17,11 +17,18 @@ var commentRoutes   = require("./routes/comments"),
     indexRoutes     = require("./routes/index");
 
 mongoose.set('useUnifiedTopology', true);
-mongoose.connect("mongodb://localhost/yelpCamp",{ useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/yelpCamp",{ useNewUrlParser: true });
 
 //seedDB;
 
-
+mongoose.connect("mongodb+srv://Kaartik:Androidoreo5@cluster0.addl6.mongodb.net/Kaartik?retryWrites=true&w=majority",{ 
+    useNewUrlParser: true,
+    useCreateIndex: true
+    }).then(()=>{
+        console.log("Connected to db");
+    }).catch(err=>{
+        console.log("err", err.message);
+    });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine","ejs");
