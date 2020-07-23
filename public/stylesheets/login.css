@@ -60,7 +60,8 @@ box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
     border: #605C3C solid;
     border-radius: 50px;
     cursor: pointer;
-    margin: 20px;
+    margin-top: 15px;
+    margin-bottom: 8px;
 }
 .loginbox button:hover{
     transform: scale(1.05);
@@ -71,4 +72,8 @@ box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
 }
 .back:hover{
     text-decoration: none;
+}
+.last
+{
+    color: beige;
 }

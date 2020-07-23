@@ -19,6 +19,12 @@
               <ul id="nav-list" class="navbar-nav ml-auto">
                 <%if(!currentUser){ %>
                   <li class="nav-item">
+                    <a class="nav-link btn from-bottom" href="/creations">
+                      <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                  <li class="nav-item">
                     <a class="nav-link btn from-bottom" href="/about">
                         <i class="far fa-address-card"></i>
                         About
@@ -41,11 +47,18 @@
                     <a class="nav-link btn" href="#"><i class="far fa-id-badge"></i>Hi, <%= currentUser.username %></a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link btn from-bottom" href="/creations">
+                      <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                  <li class="nav-item">
                     <a class="nav-link btn" href="/about">
                         <i class="far fa-address-card"></i>
                         About
                     </a>
                 </li>
+                
                   <li class="nav-item">
                     <a class="nav-link btn" href="/logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
                   </li>
