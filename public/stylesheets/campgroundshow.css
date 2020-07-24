@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 *{
     
     margin: 0px;
@@ -46,7 +47,8 @@ img {
     background-color: red;
 }
 .desc{
-    opacity: 0.8;
+  text-align: left;
+    
 }
 .card{
     background-color: whitesmoke;
@@ -135,4 +137,39 @@ img {
 .deletecom:hover{
     text-decoration: none;
     background-color: red;
+}
+.typewriter{
+  font-family: 'Monoton', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  color: whitesmoke;
+  
+}
+.typewriter{
+  
+  
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto 10px; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: whitesmoke }
+}
+.price{
+  text-align: left;
+  opacity: 0.8;
 }
