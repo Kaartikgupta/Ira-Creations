@@ -25,6 +25,8 @@ body {
 .navbar
 {
     border: none;
+    padding: .5rem .3rem;
+
 }
 #header-nav {
         margin-bottom: 10px;
@@ -47,20 +49,15 @@ body {
     border: 0; */
   }
   
-  #logo-img {
-    background: url('../images/restaurant-logo_medium.png') no-repeat;
-    width: 50px;
-    height: 50px;
-    margin: 10px 15px 10px 0;
-  }
+  
   #brand
   {
     color: whitesmoke;
   }
   .navbar-brand {
-    padding-top: 5px;
+    padding-top: 1px;
     font-size: 1.3em;
-    line-height: 10px;
+    line-height: 8px;
   }
   .navbar-brand h1 { /* Restaurant name */
     font-family: 'Lora', serif;
@@ -79,7 +76,7 @@ body {
   
   
   #nav-list {
-    margin-top: 5px;
+    margin-top: 1px;
   }
   #nav-list a {
     color: whitesmoke;
